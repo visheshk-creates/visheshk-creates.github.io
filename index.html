@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Vishesh K · Social Media Content & Design</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+  --bg:#f2f5f1; --ink:#16241f; --muted:#51625a; --line:#d5ddd6;
+  --board:#16241f; --chalk:#f2f5f1; --amber:#e8b04a; --sage:#9db8a4;
+  --btn-bg:#16241f; --btn-ink:#f2f5f1;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0f1815; --ink:#eaf0eb; --muted:#9fb0a6; --line:#26352e;
+    --board:#1a2a24; --btn-bg:#e8b04a; --btn-ink:#16241f;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0f1815; --ink:#eaf0eb; --muted:#9fb0a6; --line:#26352e;
+  --board:#1a2a24; --btn-bg:#e8b04a; --btn-ink:#16241f;
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 "DM Sans",system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+main{max-width:720px;margin:0 auto;padding:0 22px 64px}
+h1,h2,h3{font-family:"Bricolage Grotesque","DM Sans",system-ui,sans-serif;line-height:1.1;margin:0}
+section{padding-top:56px}
+h2{font-size:clamp(26px,5vw,34px);font-weight:700;margin-bottom:14px}
+p{margin:0 0 14px;max-width:62ch}
+.muted{color:var(--muted)}
+
+/* hero */
+.hero{padding-top:64px}
+.name{font-size:17px;font-weight:500;color:var(--muted);margin-bottom:18px;font-family:"DM Sans",system-ui,sans-serif}
+h1{font-size:clamp(40px,10.5vw,76px);font-weight:800;letter-spacing:-.02em;max-width:12ch}
+.lede{font-size:19px;margin-top:22px;max-width:48ch}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-block;padding:13px 22px;border-radius:999px;font-weight:500;text-decoration:none;font-size:16px;border:1.5px solid var(--ink);color:var(--ink);min-height:48px;line-height:1.4}
+.btn.solid{background:var(--btn-bg);color:var(--btn-ink);border-color:var(--btn-bg)}
+.btn:focus-visible,a:focus-visible{outline:3px solid var(--amber);outline-offset:3px}
+
+/* the menu board: the one memorable thing */
+.board{background:var(--board);color:var(--chalk);border-radius:6px;padding:30px 24px 26px;margin-top:8px;border:6px solid #3a2f22;box-shadow:inset 0 0 0 2px #5a4a36}
+.board h2{color:var(--chalk);font-size:clamp(28px,6vw,38px);margin-bottom:4px}
+.board .sub{color:var(--sage);margin-bottom:22px;font-size:15px}
+.item{padding:14px 0}
+.row{display:flex;align-items:baseline;gap:10px}
+.row .t{font-family:"Bricolage Grotesque",system-ui,sans-serif;font-weight:700;font-size:21px}
+.row .dots{flex:1;border-bottom:2px dotted rgba(242,245,241,.35);transform:translateY(-4px);min-width:16px}
+.row .p{font-family:"Bricolage Grotesque",system-ui,sans-serif;font-weight:700;font-size:21px;color:var(--amber);white-space:nowrap}
+.item .d{margin:4px 0 0;color:#cfdcd2;font-size:16px}
+.board .note{margin:20px 0 0;padding-top:16px;border-top:1px dashed rgba(242,245,241,.25);color:#cfdcd2;font-size:15px}
+
+/* lists */
+.tags{display:flex;flex-wrap:wrap;gap:10px;padding:0;margin:18px 0 0;list-style:none}
+.tags li{border:1.5px solid var(--line);padding:8px 16px;border-radius:999px;font-size:16px}
+.panel{border-left:4px solid var(--amber);padding:2px 0 2px 18px;margin-top:6px}
+
+/* contact */
+.contact{margin-top:56px;padding-top:36px;border-top:1.5px solid var(--line)}
+.contact h2{margin-bottom:8px}
+@media (prefers-reduced-motion:no-preference){
+  .hero h1{animation:rise .6s ease-out both}
+  @keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+}
+</style>
+</head>
+<body>
+<main>
+  <section class="hero" aria-labelledby="top">
+    <p class="name">Vishesh K · Freelance social media content &amp; design</p>
+    <h1 id="top">Content that feels like your brand</h1>
+    <p class="lede">I make posts, carousels and short-form reels for local cafés, food &amp; beverage brands, gaming cafés and similar businesses.</p>
+    <div class="actions">
+      <a class="btn solid" href="https://drive.google.com/drive/folders/14lKPraz8qLh-UIzuhSOe33pbgMan8ehz?usp=drive_link" target="_blank" rel="noopener">View sample work</a>
+      <a class="btn" href="#packages">See packages</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>A little about me</h2>
+    <p>I create static and carousel posts, short-form reels, promotional content and more casual, relatable content, depending on the brand.</p>
+    <p class="muted">I leave room for creative ideas and different formats, so your page doesn't feel repetitive.</p>
+  </section>
+
+  <section id="packages" aria-labelledby="menu-h">
+    <div class="board">
+      <h2 id="menu-h">Monthly menu</h2>
+      <p class="sub">Simple starting packages. We confirm the best fit for what your page needs.</p>
+
+      <div class="item">
+        <div class="row"><span class="t">Starter</span><span class="dots"></span><span class="p">₹2,000 / month</span></div>
+        <p class="d">8 high-quality static or carousel posts</p>
+      </div>
+      <div class="item">
+        <div class="row"><span class="t">Reels</span><span class="dots"></span><span class="p">₹4,500 / month</span></div>
+        <p class="d">4 short-form reels</p>
+      </div>
+      <div class="item">
+        <div class="row"><span class="t">Combo</span><span class="dots"></span><span class="p">₹5,000 / month</span></div>
+        <p class="d">4 short-form reels + 2 high-quality static or carousel posts</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="direction">
+    <h2>What your content can be about</h2>
+    <p>Content is shaped around your page and your audience. A few directions that work:</p>
+    <ul class="tags">
+      <li>Products</li><li>Food &amp; beverages</li><li>Gaming</li><li>Offers</li><li>Promotions</li><li>Events</li><li>Memes</li><li>PC builds</li>
+    </ul>
+    <p class="muted" style="margin-top:14px">Have a different idea? If it makes sense for your page, we can make it.</p>
+  </section>
+
+  <section id="footage">
+    <h2>Original footage</h2>
+    <div class="panel">
+      <p>For reels that benefit from original footage, an initial shoot can be arranged at the start to build a useful base of clips.</p>
+      <p>Monthly content is then built around that footage, so you don't need regular shoots.</p>
+      <p class="muted">If your page later changes in a meaningful way, like a renovation, new setup or major update, fresh footage can be planned separately.</p>
+    </div>
+  </section>
+
+  <section id="work">
+    <h2>Sample work</h2>
+    <p>The portfolio has sample concepts that show different approaches to social media content. Final content for your business is tailored to your brand, products, audience, offers and available footage.</p>
+    <div class="actions">
+      <a class="btn solid" href="https://drive.google.com/drive/folders/14lKPraz8qLh-UIzuhSOe33pbgMan8ehz?usp=drive_link" target="_blank" rel="noopener">Open the full portfolio</a>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Let's talk about your page</h2>
+    <p>Reply to the message where you got this link, or catch me in person, and we'll find the package that fits.</p>
+  </section>
+</main>
+</body>
+</html>
